@@ -357,7 +357,7 @@ namespace AvatarStatsLoader
                 AvatarStatsMod.Log("Load mass: " + name);
                 if (Directory.Exists(AvatarStatsMod.MASS_FOLDER))
                 {
-                    string massFile = Path.Combine(AvatarStatsMod.MASS_FOLDER, ".json");
+                    string massFile = Path.Combine(AvatarStatsMod.MASS_FOLDER, name + ".json");
                     if (File.Exists(massFile))
                     {
                         AvatarStatsMod.Log("Overriding mass with values from " + massFile);
